@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div
       style={{ position: "relative", zIndex: 1 }}
-      className=" text-white h-[80px] lg:h-[100px] shadow-bottom shadow-white hover:shadow-lg duration-200"
+      className=" text-white h-[80px] lg:h-[100px] shadow-bottom shadow-white hover:shadow-lg duration-300 hover:-skew-x-12"
     >
       <Container>
         <nav className="flex justify-between items-center ">
@@ -24,7 +24,7 @@ const Header = () => {
               <img
                 src={logo}
                 alt="TriWebic"
-                className="w-48 h-auto hover:transform-3d "
+                className="w-48 h-auto hover:-skew-x-12 duration-500"
               />
             </Link>
           </div>
@@ -34,7 +34,7 @@ const Header = () => {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    className="text-xl hover:text-orange-700 duration-300 hover:underline"
+                    className="text-xl hover:text-orange-700 duration-300 hover:underline hover:-skew-x-12"
                   >
                     {item.name}
                   </Link>
