@@ -1,13 +1,15 @@
-import { useState } from "react";
+import React from "react";
 import SpiderCursor from "./components/SpiderCursor";
-import Header from "./components/Header";
+import Home from "./components/ui/Home";
+import Container from "./components/Container";
 
 function App() {
   return (
     <main>
-      <SpiderCursor />
-      <div className="position-relative z-10">
-        <Header />
+      <div className="position-relative z-10 bg-purple-800 text-white py-4">
+        <Container>
+          <Home />
+        </Container>
       </div>
     </main>
   );

@@ -11,7 +11,10 @@ const Header = () => {
     { name: "Contact", path: "/contact" },
   ];
   return (
-    <div className="bg-slate-900 text-white h-[80px] shadow-bottom shadow-white hover:shadow-lg py-4 duration-200">
+    <div
+      style={{ position: "relative", zIndex: 1 }}
+      className="bg-slate-900 text-white h-[80px] shadow-bottom shadow-white hover:shadow-lg py-4 duration-200"
+    >
       <Container>
         <nav className="flex justify-between items-center py-4">
           <div>

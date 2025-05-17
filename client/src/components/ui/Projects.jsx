@@ -1,7 +1,14 @@
 import React from "react";
-
+import Container from "../Container";
 const Projects = () => {
-  return <div>Projects</div>;
+  return (
+    <div
+      style={{ position: "relative", zIndex: 1 }}
+      className="position-relative z-10 bg-purple-800 text-white py-4"
+    >
+      <Container className="text-center">This is the Projects page</Container>
+    </div>
+  );
 };
 
 export default Projects;

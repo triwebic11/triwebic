@@ -1,7 +1,14 @@
 import React from "react";
-
+import Container from "../Container";
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div
+      style={{ position: "relative", zIndex: 1 }}
+      className="position-relative z-10 bg-purple-800 text-white py-4"
+    >
+      <Container className="text-center">This is the Home page</Container>
+    </div>
+  );
 };
 
 export default Home;
