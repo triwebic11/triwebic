@@ -10,11 +10,13 @@ import Projects from "./components/ui/Projects.jsx";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import SpiderCursor from "./components/SpiderCursor.jsx";
+import NightSky from "./components/NighSky.jsx";
 
 const Layout = () => {
   return (
     <div>
-      <SpiderCursor />
+      {/* <SpiderCursor /> */}
+      <NightSky />
       <Header />
       <Outlet />
       <Footer />

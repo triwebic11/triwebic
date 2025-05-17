@@ -4,10 +4,11 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(
-    to top left,
-    rgb(204, 152, 54),
-    #143572,
-    rgba(128, 0, 128, 0.938)
+    to bottom,
+    #0b0c10,
+    #1b1b2f,
+    #2c3e50,
+    #000000
   ); /* Example gradient */
   height: 100vh;
   overflow: hidden;

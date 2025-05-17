@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import { Link } from "react-router-dom";
+import logo from "../assets/triwebic-logo.png";
 
 const Header = () => {
   const MenuItem = [
@@ -13,18 +14,28 @@ const Header = () => {
   return (
     <div
       style={{ position: "relative", zIndex: 1 }}
-      className="bg-slate-900 text-white h-[80px] shadow-bottom shadow-white hover:shadow-lg py-4 duration-200"
+      className=" text-white h-[80px] lg:h-[100px] shadow-bottom shadow-white hover:shadow-lg duration-200"
     >
       <Container>
-        <nav className="flex justify-between items-center py-4">
+        <nav className="flex justify-between items-center ">
           <div>
-            <img src="" alt="" />
+            <Link to="/">
+              {" "}
+              <img
+                src={logo}
+                alt="TriWebic"
+                className="w-48 h-auto hover:transform-3d "
+              />
+            </Link>
           </div>
           <div>
             <ul className="flex gap-4">
               {MenuItem.map((item, index) => (
                 <li key={index}>
-                  <Link to={item.path} className="text-xl ">
+                  <Link
+                    to={item.path}
+                    className="text-xl hover:text-orange-700 duration-300 hover:underline"
+                  >
                     {item.name}
                   </Link>
                 </li>

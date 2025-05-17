@@ -2,11 +2,17 @@ import React from "react";
 import Container from "../Container";
 const Home = () => {
   return (
-    <div
-      style={{ position: "relative", zIndex: 1 }}
-      className="position-relative z-10 bg-purple-800 text-white py-4"
-    >
-      <Container className="text-center">This is the Home page</Container>
+    <div>
+      <Container className="text-center">
+        <div
+          style={{ position: "relative", zIndex: 1 }}
+          className="flex flex-col items-center justify-center text-white text-9xl font-bold"
+        >
+          <h1 className=" ">HELLO!</h1>
+          <h2 className="">WELLCOM</h2>
+          <h3 className=" ">TO TriWebic</h3>
+        </div>
+      </Container>
     </div>
   );
 };

@@ -1,0 +1,32 @@
+/* src/components/NightSky.css */
+
+.night-sky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #0b0c10, #1b1b2f, #1e456b, #000000);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.stars {
+  width: 2px;
+  height: 2px;
+  background: rgb(188, 211, 86);
+  position: absolute;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out alternate;
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(2.8);
+  }
+}
