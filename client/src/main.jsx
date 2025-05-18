@@ -11,12 +11,14 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import SpiderCursor from "./components/SpiderCursor.jsx";
 import NightSky from "./components/NighSky.jsx";
+import CursorFollower from "./components/CursorFollower.jsx";
 
 const Layout = () => {
   return (
     <div>
       {/* <SpiderCursor /> */}
       <NightSky />
+      <CursorFollower />
       <Header />
       <Outlet />
       <Footer />
